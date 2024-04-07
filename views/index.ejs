@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    
+  }
+  
+  .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="1" d="M0,256L48,240C96,224,192,192,288,165.3C384,139,480,117,576,138.7C672,160,768,224,864,250.7C960,277,1056,267,1152,245.3C1248,224,1344,192,1392,176L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>');
+    animation:wave 20s linear infinite alternate;
+  }
+  
+  @keyframes wave {
+    0% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+    
+        nav {
+   /* background-color: #2135d1;*/
+    color: #fff;
+    padding: 10px 0;
+    backdrop-filter: blur(0px);
+    background-color: rgba(255, 255, 255, 0.6);
+    opacity: 1;
+    border-radius: 10px;;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    overflow: hidden;
+   
+}
+
+.logo {
+    float: left;
+    margin: 0;
+    
+}
+
+.nav-links {
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    color: #ffcc00;
+}
+.container {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .column {
+        flex: 1;
+        background-color: #f9f9f9;
+        padding: 20px;
+        margin-right: 10px; /* Adjust as needed */
+        border-radius: 5px;
+    }
+    
+    .column:last-child {
+        margin-right: 0;
+    }
+    .submit-button {
+    background-color: #007bff; /* Blue color */
+    color: #fff; /* White text color */
+    padding: 10px 20px; /* Padding around the text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor style on hover */
+}
+
+.submit-button:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+}
+button {
+  padding: 10px 20px;
+  background-color:#160a9d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #160a9d;
+}
+
+
+    </style>
+</head>
+<body>
+    <nav style="margin-bottom: 10px;">
+        <div class="container">
+            <h1 class="logo">MENTALIX</h1>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <form action="/form" method="post">
+        <div class="container">
+            <div class="column">
+                <div class="checkbox-container">
+                    <input type="checkbox" id="0" name="0" value="0" class="myInputFields">
+                    <label for="0">Depressed Mood 
+                    </label><br>
+            
+                    <input type="checkbox" id="1" name="1" value="1" class="myInputFields">
+                    <label for="1">Excessive Worry</label><br>
+            
+                    <input type="checkbox" id="2" name="2" value="2" class="myInputFields">
+                    <label for="2">Mood Liability</label><br>
+            
+                    <input type="checkbox" id="3" name="3" value="3" class="myInputFields">
+                    <label for="3"> Delusions</label><br>
+                    <input type="checkbox" id="4" name="4" value="4" class="myInputFields">
+                    <label for="4">Intrusive Memories</label><br>
+            
+                    <input type="checkbox" id="5" name="5" value="5" class="myInputFields">
+                    <label for="5">Obsessions</label><br>
+            
+                    <input type="checkbox" id="6" name="6" value="6" class="myInputFields">
+                    <label for="6">Inattention</label><br>
+            
+                    <input type="checkbox" id="7" name="7" value="7" class="myInputFields">
+                    <label for="7">Intense Relationships</label><br>
+                    <input type="checkbox" id="8" name="8" value="8" class="myInputFields">
+                    <label for="8">Preoccupation Food</label><br>
+            
+                    <input type="checkbox" id="9" name="9" value="9" class="myInputFields">
+                    <label for="9">Social Difficulties</label><br>
+            
+                    <input type="checkbox" id="10" name="10" value="10" class="myInputFields">
+                    <label for="10">Intense Fear</label><br>
+            
+                    <input type="checkbox" id="11" name="11" value="11" class="myInputFields">
+                    <label for="11">Substance Craving</label><br>
+                    <input type="checkbox" id="12" name="12" value="12" class="myInputFields">
+                    <label for="12">Alters Present</label><br>
+            
+                    <input type="checkbox" id="13" name="13" value="13" class="myInputFields">
+                    <label for="13">Panic Attacks</label><br>
+            
+                    <input type="checkbox" id="14" name="14" value="14" class="myInputFields">
+                    <label for="14">Difficulty Sleeping</label><br>
+            
+                    <input type="checkbox" id="15" name="15" value="15" class="myInputFields">
+                    <label for="15">Psychotic Symptoms</label><br>
+                    <input type="checkbox" id="16" name="16" value="16" class="myInputFields">
+                    <label for="16">Appearance Concerns</label><br>
+            
+                    <input type="checkbox" id="17" name="17" value="17" class="myInputFields">
+                    <label for="17">Loss of Interest</label><br>
+            
+                    <input type="checkbox" id="18" name="18" value="18" class="myInputFields">
+                    <label for="18">Deprecation</label><br>
+                    <input type="checkbox" id="19" name="19" value="19" class="myInputFields">
+                    <label for="19">Stress Reaction</label><br>
+                    <input type="checkbox" id="20" name="20" value="20" class="myInputFields">
+                    <label for="20">Anhedonia</label><br>
+            
+                    <input type="checkbox" id="21" name="21" value="21" class="myInputFields">
+                    <label for="21">Restlessness</label><br>
+                    <input type="checkbox" id="22" name="22" value="22" class="myInputFields">
+                    <label for="22">Elevated Mood</label><br>
+                    <input type="checkbox" id="23" name="23" value="23" class="myInputFields">
+                    <label for="23">Hallucinations</label><br>
+
+                </div>
+            </div>
+            <div class="column">
+                <div class="checkbox-container">
+                    <input type="checkbox" id="24" name="24" value="24" class="myInputFields">
+                    <label for="24">Avoidance Behaviour</label><br>
+            
+                    <input type="checkbox" id="25" name="25" value="25" class="myInputFields">
+                    <label for="25">Compulsions</label><br>
+            
+                    <input type="checkbox" id="26" name="26" value="26" class="myInputFields">
+                    <label for="26">Hyperactivity</label><br>
+            
+                    <input type="checkbox" id="27" name="27" value="27" class="myInputFields">
+                    <label for="27"> Identity Disturbance</label><br>
+                    <input type="checkbox" id="28" name="28" value="28" class="myInputFields">
+                    <label for="28">Body Dissatisfaction</label><br>
+            
+                    <input type="checkbox" id="29" name="29" value="29" class="myInputFields">
+                    <label for="29">Communication Challenges
+                    </label><br>
+            
+                    <input type="checkbox" id="30" name="30" value="30" class="myInputFields">
+                    <label for="30"> Fatigue</label><br>
+            
+                    <input type="checkbox" id="31" name="31" value="31" class="myInputFields">
+                    <label for="31">Substance Tolerance</label><br>
+                    <input type="checkbox" id="32" name="32" value="32" class="myInputFields">
+                    <label for="32">Memory Gaps</label><br>
+            
+                    <input type="checkbox" id="33" name="33" value="33" class="myInputFields">
+                    <label for="33"> Fear</label><br>
+            
+                    <input type="checkbox" id="34" name="34" value="34" class="myInputFields">
+                    <label for="34">Waking Up Too Early</label><br>
+            
+                    <input type="checkbox" id="35" name="35" value="35" class="myInputFields">
+                    <label for="35"> Mood Disturbances</label><br>
+                    <input type="checkbox" id="36" name="36" value="36" class="myInputFields">
+                    <label for="36">Repetitive Behaviour</label><br>
+            
+                    <input type="checkbox" id="37" name="37" value="37" class="myInputFields">
+                    <label for="37">Increased Sleep</label><br>
+            
+                    <input type="checkbox" id="38" name="38" value="38" class="myInputFields">
+                    <label for="38">Maladaptive Coping</label><br>
+            
+                    <input type="checkbox" id="39" name="39" value="39" class="myInputFields">
+                    <label for="39">Changes Appetite</label><br>
+                    <input type="checkbox" id="40" name="40" value="40" class="myInputFields">
+                    <label for="40">Irritability</label><br>
+            
+                    <input type="checkbox" id="41" name="41" value="41" class="myInputFields">
+                    <label for="41"> Changes Energy</label><br>
+            
+                    <input type="checkbox" id="42" name="42" value="42" class="myInputFields">
+                    <label for="42">Disorganized Thinking</label><br>
+            
+                    <input type="checkbox" id="43" name="43" value="43" class="myInputFields">
+                    <label for="43">Negative Mood</label><br>
+            
+                    <input type="checkbox" id="44" name="44" value="44" class="myInputFields">
+                    <label for="44">Anxiety</label><br>
+            
+                    <input type="checkbox" id="45" name="45" value="45" class="myInputFields">
+                    <label for="45">Ultra Impulsivity</label><br>
+
+                </div>
+            </div>
+            <div class="column">
+                <div class="checkbox-container">
+                    <input type="checkbox" id="46" name="46" value="46" class="myInputFields">
+                    <label for="46">Impulsive Behaviors</label><br>
+            
+                    <input type="checkbox" id="47" name="47" value="47" class="myInputFields">
+                    <label for="47">Binge Eating</label><br>
+            
+                    <input type="checkbox" id="48" name="48" value="48" class="myInputFields">
+                    <label for="48"> Difficulty Concentrating</label><br>
+            
+                    <input type="checkbox" id="49" name="49" value="49" class="myInputFields">
+                    <label for="49">Physical Symptoms</label><br>
+                    <input type="checkbox" id="50" name="50" value="50" class="myInputFields">
+                    <label for="50">Withdrawal Symptoms</label><br>
+            
+                    <input type="checkbox" id="51" name="51" value="51" class="myInputFields">
+                    <label for="51">Identity Confusion</label><br>
+            
+                    <input type="checkbox" id="52" name="52" value="52" class="myInputFields">
+                    <label for="52">Non-Restorative Sleep</label><br>
+            
+                    <input type="checkbox" id="53" name="53" value="53" class="myInputFields">
+                    <label for="53"> Functional Impairment</label><br>
+                    <input type="checkbox" id="54" name="54" value="54" class="myInputFields">
+                    <label for="54">Sleep Disturbance</label><br>
+            
+                    <input type="checkbox" id="55" name="55" value="55" class="myInputFields">
+                    <label for="55">Muscle Tension</label><br>
+            
+                    <input type="checkbox" id="56" name="56" value="56" class="myInputFields">
+                    <label for="56">Impaired Cognition</label><br>
+            
+                    <input type="checkbox" id="57" name="57" value="57" class="myInputFields">
+                    <label for="57"> Hyperarousal</label><br>
+                    <input type="checkbox" id="58" name="58" value="58" class="myInputFields">
+                    <label for="58">Time-Consuming</label><br>
+            
+                    <input type="checkbox" id="59" name="59" value="59" class="myInputFields">
+                    <label for="59">Difficulty Focusing</label><br>
+            
+                    <input type="checkbox" id="60" name="60" value="60" class="myInputFields">
+                    <label for="60"> Emotional Swings</label><br>
+            
+                    <input type="checkbox" id="61" name="61" value="61" class="myInputFields">
+                    <label for="61">Disturbed Body Image</label><br>
+                    <input type="checkbox" id="62" name="62" value="62" class="myInputFields">
+                    <label for="62">Sensory Sensitivities</label><br>
+            
+                    <input type="checkbox" id="63" name="63" value="63" class="myInputFields">
+                    <label for="63">Thoughts Suicide</label><br>
+            
+                    <input type="checkbox" id="64" name="64" value="64" class="myInputFields">
+                    <label for="64">Excessive Fear</label><br>
+                    <input type="checkbox" id="65" name="65" value="65" class="myInputFields">
+                    <label for="65">Loss Control Use</label><br>
+            
+                    <input type="checkbox" id="66" name="66" value="66" class="myInputFields">
+                    <label for="66">Daytime Dysfunction</label><br>
+            
+                    <input type="checkbox" id="67" name="67" value="67" class="myInputFields">
+                    <label for="67">Loss of Duration</label><br>
+                    <input type="checkbox" id="68" name="68" value="68" class="myInputFields">
+                    <label for="68">Fatigue</label><br>
+                    
+                
+                    
+                </div>
+            </div>
+        </div>
+        <button type="submit" class=""id="validateButton" style="position: absolute; left: 76%; margin-top: 3px;">Submit</button>
+    </form>
+    
+    <div id="output" style="position: absolute; left: 39.5%; background-color: aquamarine; margin: 5px; padding: 5px 15px; border-radius: 5px;">
+        <p><%= mlOutput %></p>
+    </div>
+    
+
+    <script>
+        document.getElementById('validateButton').addEventListener('click', function() {
+            var checkboxes = document.querySelectorAll('input[type=checkbox]:checked');
+            if (checkboxes.length < 4) {
+                alert('Please select at least 4 symptoms.');
+            }
+        });
+        const input = document.querySelectorAll('input[type=checkbox]');
+    </script>
+</body>
+</html>
